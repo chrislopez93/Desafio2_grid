@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: blue;
+}
+aside{
+    grid-area: aside;
+    background-color: red;
+}
+main{
+    grid-area: main;
+    background-color: yellow;
+}
+footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
