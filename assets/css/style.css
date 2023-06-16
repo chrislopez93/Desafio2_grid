@@ -9,8 +9,8 @@ body{
 }
 
 .grid_container{
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: grid;   
+    justify-content: space-between;
     grid-template-areas: 
     "header header header"
     "aside main main"
@@ -21,21 +21,38 @@ body{
 header{
     grid-area: header;
     background-color: blue;
+    height: 7vh;
 }
 aside{
     grid-area: aside;
     background-color: red;
+    width: 20vw;
+    height: 86vh;
 }
-main{
+.grid_item{
+    display: grid;
     grid-area: main;
-    background-color: yellow;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: green;
+    width: 80vw;
+    height: 86vh;
+    
 }
+
+.grid_flex_container{
+    background-color: yellow;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.grid_box_item_text{
+    text-align: center;
+}
+
 footer{
     grid-area: footer;
     background-color: aqua;
-}
-
-.grid-item{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    height: 7vh;
 }
