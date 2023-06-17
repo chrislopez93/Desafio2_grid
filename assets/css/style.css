@@ -22,7 +22,7 @@ body{
     display: grid;
     grid-template-columns: 15% 15% 15%;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 25px;
     width: 78vw;
 }
@@ -43,7 +43,8 @@ header{
 
 aside{
     grid-area:aside;
-    width: 20vw;
+    width: 18vw;
+
 } 
 
 main{
@@ -53,8 +54,12 @@ main{
 footer{
     grid-area: footer;
     height: 5vh;
+    display: flex;
     background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .grid_item_mini{
     margin-bottom: 25px;
@@ -85,7 +90,6 @@ footer{
     margin: 10px;
 }
 
-
 .flex_button{
     border-radius: 0%;
     width: 100%;
@@ -100,5 +104,22 @@ footer{
     font-size: 1.5rem;
     color: #ffffff;
 }
-
 /*FIN DEL CONTENEDOR DE PRODUCTOS (IMAGEN, TITULO, PRECIO, BOTÓN)*/
+
+.list_flex_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.list_flex_container ul li{
+    list-style: none;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.flex_list_color{
+    color: #7a7a7a;
+}
